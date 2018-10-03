@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang=en>
   <head>
     <meta charset=utf-8>
@@ -9,11 +9,25 @@
     <h1>Help me choose between...</h1>
     <div class="inputSection">
       <div class="inputs">
-        <input placeholder="Something">
+        <input placeholder="Something"></input>
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
     <button>Go!</button>
-    <img src="food.jpeg" alt="mat" widht=150 height="150">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.resultSection').hide()
+
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+      }
+
+      $('.addOption').click(add_option)
+    })
+    </script>
+    <img src="food.jpeg" alt=mat width="150" height="150">
   </body>
 </html>
