@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  background-color: lightblue;
 }
 
 h1 {
@@ -34,7 +35,9 @@ input {
 
 button {
   background-color: pink;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 5px 12px;
 }
 
 .resultSection{
@@ -43,4 +46,8 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 35px;
+}
+
+.submit{
+  margin-bottom: 50px;
 }
